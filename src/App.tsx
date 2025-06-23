@@ -211,10 +211,10 @@ function App() {
                   <GraduationCap className="w-8 h-8 text-yellow-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-slate-800 mb-2">Senior High School – Natural Sciences</h3>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">Senior High School – Mathematics and Natural Sciences</h3>
                   <p className="text-lg text-yellow-600 font-semibold mb-2">SMA Negeri 9 Kota Tangerang</p>
                   <p className="text-sm text-slate-500 mb-2">2019 – 2022</p>
-                  <p className="text-slate-600 mb-4">Graduated with a focus in Natural Sciences (MIPA), fostering a strong analytical and logical foundation.</p>
+                  <p className="text-slate-600 mb-4">Graduated with a focus in Mathematics and Natural Sciences (MIPA), fostering a strong analytical and logical foundation.</p>
                   {/* <span className="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">2019 – 2022</span> */}
                 </div>
               </div>
