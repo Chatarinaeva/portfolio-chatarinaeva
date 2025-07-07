@@ -349,44 +349,58 @@ function App() {
           </div>
       
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project Card 1 */}
+            {/* Project: Data Analysis with Python */}
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-bold text-slate-800 mb-2">Customer Churn Prediction</h3>
-              <p className="text-slate-600 text-sm mb-4">Built a machine learning model to predict customer churn based on behavior data using Logistic Regression and XGBoost.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Data Analysis with Python</h3>
+              <p className="text-slate-600 text-sm mb-4">Performed exploratory data analysis using Pandas, NumPy, and Matplotlib to uncover insights from diverse datasets.</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Python</span>
-                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Scikit-learn</span>
-                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">EDA</span>
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Pandas</span>
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Matplotlib</span>
               </div>
-              <a href="https://github.com/Chatarinaeva/churn-prediction" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm font-medium">
+              <a href="https://github.com/Chatarinaeva/proyek_analisis_data_python" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm font-medium">
                 View on GitHub →
               </a>
             </div>
       
-            {/* Project Card 2 */}
-            <div className="bg-gradient-to-br from-slate-100 to-blue-100 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-bold text-slate-800 mb-2">E-Commerce Dashboard</h3>
-              <p className="text-slate-600 text-sm mb-4">Interactive dashboard for sales insights, built with Tableau and integrated with SQL queries for dynamic filtering.</p>
+            {/* Project: Sentiment Analysis */}
+            <div className="bg-gradient-to-br from-pink-100 to-yellow-100 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Sentiment Analysis</h3>
+              <p className="text-slate-600 text-sm mb-4">Implemented sentiment classification on Indonesian text using machine learning models and text preprocessing techniques.</p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Tableau</span>
-                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">SQL</span>
-                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Data Viz</span>
+                <span className="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-medium">Text Mining</span>
+                <span className="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-medium">TF-IDF</span>
+                <span className="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-medium">Naive Bayes</span>
               </div>
-              <a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm font-medium">
-                View Dashboard →
+              <a href="https://github.com/Chatarinaeva/analisis_sentimen" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline text-sm font-medium">
+                View on GitHub →
               </a>
             </div>
       
-            {/* Project Card 3 */}
-            <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-bold text-slate-800 mb-2">Image Classification with CNN</h3>
-              <p className="text-slate-600 text-sm mb-4">Built a Convolutional Neural Network model for classifying images of clothing items from the Fashion-MNIST dataset.</p>
+            {/* Project: Predictive Analysis Project */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Predictive Analysis</h3>
+              <p className="text-slate-600 text-sm mb-4">Developed a classification model using decision tree and random forest to predict potential defaults on credit scoring datasets.</p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">TensorFlow</span>
-                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">CNN</span>
-                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Deep Learning</span>
+                <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Scikit-learn</span>
+                <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Random Forest</span>
+                <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Classification</span>
               </div>
-              <a href="https://github.com/Chatarinaeva/image-classification" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline text-sm font-medium">
+              <a href="https://github.com/Chatarinaeva/predictive_analysis_project" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline text-sm font-medium">
+                View on GitHub →
+              </a>
+            </div>
+      
+            {/* Project: Movie Recommendation System */}
+            <div className="bg-gradient-to-br from-purple-100 to-indigo-100 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Movie Recommendation System</h3>
+              <p className="text-slate-600 text-sm mb-4">Built a content-based recommendation system using cosine similarity on movie metadata to suggest similar movies.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Recommendation</span>
+                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Cosine Similarity</span>
+                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Pandas</span>
+              </div>
+              <a href="https://github.com/Chatarinaeva/movie_recommendation_system" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline text-sm font-medium">
                 View on GitHub →
               </a>
             </div>
