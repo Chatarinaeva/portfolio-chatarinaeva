@@ -337,6 +337,64 @@ function App() {
         </div>
       </section> */}
 
+      {/* Project Section */}
+      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Projects</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+            <p className="text-xl text-slate-600 mt-4 max-w-2xl mx-auto">
+              A glimpse into some of the hands-on projects I've developed in analytics, machine learning, and system development.
+            </p>
+          </div>
+      
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Project Card 1 */}
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Customer Churn Prediction</h3>
+              <p className="text-slate-600 text-sm mb-4">Built a machine learning model to predict customer churn based on behavior data using Logistic Regression and XGBoost.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Python</span>
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Scikit-learn</span>
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">EDA</span>
+              </div>
+              <a href="https://github.com/Chatarinaeva/churn-prediction" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm font-medium">
+                View on GitHub →
+              </a>
+            </div>
+      
+            {/* Project Card 2 */}
+            <div className="bg-gradient-to-br from-slate-100 to-blue-100 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-slate-800 mb-2">E-Commerce Dashboard</h3>
+              <p className="text-slate-600 text-sm mb-4">Interactive dashboard for sales insights, built with Tableau and integrated with SQL queries for dynamic filtering.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Tableau</span>
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">SQL</span>
+                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Data Viz</span>
+              </div>
+              <a href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm font-medium">
+                View Dashboard →
+              </a>
+            </div>
+      
+            {/* Project Card 3 */}
+            <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Image Classification with CNN</h3>
+              <p className="text-slate-600 text-sm mb-4">Built a Convolutional Neural Network model for classifying images of clothing items from the Fashion-MNIST dataset.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">TensorFlow</span>
+                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">CNN</span>
+                <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Deep Learning</span>
+              </div>
+              <a href="https://github.com/Chatarinaeva/image-classification" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline text-sm font-medium">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
