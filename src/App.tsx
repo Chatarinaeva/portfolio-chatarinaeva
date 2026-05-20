@@ -86,10 +86,11 @@ function App() {
       </section> */}
       
     {/* Hero Section */}
-    <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-br from-orange-600 from-[0%] via-gray-800 via-[30%] to-gray-900 to-[50%]">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-12 w-full md:pl-12">
+    <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-bl from-orange-600/40 via-gray-800 via-[40%] to-gray-900 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-[120px] pointer-events-none hidden md:block" />
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-12 w-full md:pl-12 relative z-10">
         <div className="flex-shrink-0">
-          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl border-4 border-white mx-auto md:mx-0">
+          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_50px_rgba(249,115,22,0.25)] border-4 border-white/90 mx-auto md:mx-0">
             <img
               src="/profilepic.jpeg"
               alt="Chatarina Evangelista Sitorus"
@@ -98,25 +99,25 @@ function App() {
           </div>
         </div>
         <div className="text-center md:text-left md:ml-12 flex-1">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
             Chatarina Evangelista
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500 mt-1">
               Sitorus
             </span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-md md:max-w-lg">
+          <p className="text-lg sm:text-xl text-gray-300 mt-4 mb-8 max-w-md md:max-w-lg leading-relaxed">
             Passionate about transforming data into meaningful insights through analytics and machine learning
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               onClick={() => scrollToSection('about')}
-              className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.4)] transform hover:-translate-y-0.5 transition-all duration-300"
             >
               Learn About Me
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:text-black transition-all duration-300"
+              className="border border-white/60 text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300"
             >
               Get In Touch
             </button>
