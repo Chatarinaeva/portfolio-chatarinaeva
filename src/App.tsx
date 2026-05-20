@@ -85,12 +85,11 @@ function App() {
         </div>
       </section> */}
       
-     {/* Hero Section */}
-    <section className="min-h-screen flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
-
+    {/* Hero Section */}
+    <section className="min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 w-full">
         <div className="flex-shrink-0">
-          <div className="w-60 h-60 rounded-full overflow-hidden shadow-2xl border-4 border-white mx-auto md:mx-0">
+          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-2xl border-4 border-white mx-auto md:mx-0">
             <img
               src="/profilepic.jpeg"
               alt="Chatarina Evangelista Sitorus"
@@ -98,15 +97,14 @@ function App() {
             />
           </div>
         </div>
-
-        <div className="text-center md:text-left md:ml-8">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-800 mb-4">
+        <div className="text-center md:text-left mt-6 md:mt-0 flex-1">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 mb-4">
             Chatarina Evangelista
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
               Sitorus
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl text-slate-600 mb-8 max-w-lg">
+          <p className="text-lg sm:text-xl text-slate-600 mb-8 max-w-md md:max-w-lg">
             Passionate about transforming data into meaningful insights through analytics and machine learning
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -124,7 +122,6 @@ function App() {
             </button>
           </div>
         </div>
-    
       </div>
     </section>
       
