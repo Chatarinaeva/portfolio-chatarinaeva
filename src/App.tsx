@@ -86,11 +86,12 @@ function App() {
       </section> */}
       
     {/* Hero Section */}
-    <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-bl from-orange-600/40 via-gray-800 via-[40%] to-gray-900 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-[120px] pointer-events-none hidden md:block" />
+    <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gray-900 relative overflow-hidden">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[70%] h-full bg-[radial-gradient(circle_at_right,_var(--tw-gradient-stops))] from-orange-500/90 via-gray-900/90 to-transparent opacity-90 pointer-events-none" />
+    
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-12 w-full md:pl-12 relative z-10">
         <div className="flex-shrink-0">
-          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_50px_rgba(249,115,22,0.25)] border-4 border-white/90 mx-auto md:mx-0">
+          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_50px_rgba(249,115,22,0.35)] border-4 border-white/90 mx-auto md:mx-0">
             <img
               src="/profilepic.jpeg"
               alt="Chatarina Evangelista Sitorus"
@@ -111,13 +112,13 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               onClick={() => scrollToSection('about')}
-              className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.4)] transform hover:-translate-y-0.5 transition-all duration-300"
+              className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-300"
             >
               Learn About Me
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="border border-white/60 text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300"
+              className="border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
             >
               Get In Touch
             </button>
