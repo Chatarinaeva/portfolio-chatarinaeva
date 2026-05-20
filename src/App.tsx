@@ -86,9 +86,9 @@ function App() {
       </section> */}
       
     {/* Hero Section */}
-    <section className="min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section className="min-h-[calc(100vh-4rem)] pt-28 sm:pt-32 flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 w-full">
-        <div className="flex-shrink-0">
+          <div className="flex-shrink-0">
           <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-2xl border-4 border-white mx-auto md:mx-0">
             <img
               src="/profilepic.jpeg"
