@@ -28,6 +28,12 @@ function App() {
                 Education
               </button>
               <button
+                onClick={() => scrollToSection('experience')}
+                className="text-slate-600 hover:text-blue-600 transition-colors duration-200"
+              >
+                Experience
+              </button>
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="text-slate-600 hover:text-blue-600 transition-colors duration-200"
               >
@@ -157,32 +163,7 @@ function App() {
           </div>
       
           <div className="space-y-8">
-      
-            {/* Coding Camp */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-start space-x-6">
-                <div className="bg-purple-100 p-4 rounded-full">
-                  <Cpu className="w-8 h-8 text-purple-600" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-slate-800 mb-2">Machine Learning Engineer Cohort</h3>
-                  <p className="text-lg text-purple-600 font-semibold mb-2">Coding Camp 2025 powered by DBS Foundation</p>
-                  <p className="text-sm text-slate-500 mb-2">Feb 2025 – Jul 2025 (Ongoing)</p>
-                  <p className="text-slate-600 mb-4">Intensive program covering machine learning fundamentals, data preprocessing, Python programming, model development, and applied ML projects.</p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span>
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Data Processing</span>
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Data Visualization</span>
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Deep Learning</span>
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Image Classification</span>
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Mini Projects</span>
-                  </div>
-                  {/* <span className="inline-block mt-3 bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Feb 2025 – Jul 2025 (Ongoing)</span> */}
-                </div>
-              </div>
-            </div>
-      
+           
             {/* Undergraduate */}
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-start space-x-6">
@@ -336,6 +317,57 @@ function App() {
           </div>
         </div>
       </section> */}
+
+      {/* Experience Section */}
+      <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Experience</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+          </div>
+      
+          <div className="space-y-8">
+            {/* Coding Camp Experience */}
+            <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-start space-x-6">
+                <div className="bg-purple-100 p-4 rounded-full">
+                  <Cpu className="w-8 h-8 text-purple-600" />
+                </div>
+      
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">
+                    Machine Learning Engineer Cohort
+                  </h3>
+      
+                  <p className="text-lg text-purple-600 font-semibold mb-2">
+                    Coding Camp 2025 powered by DBS Foundation
+                  </p>
+      
+                  <p className="text-sm text-slate-500 mb-2">
+                    Feb 2025 – Jul 2025
+                  </p>
+      
+                  <p className="text-slate-600 mb-4">
+                    Participated in an intensive machine learning program covering Python programming, 
+                    data preprocessing, model development, data visualization, deep learning fundamentals, 
+                    and applied machine learning projects.
+                  </p>
+      
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span>
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Data Processing</span>
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Data Visualization</span>
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Deep Learning</span>
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Image Classification</span>
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Mini Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Project Section */}
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
