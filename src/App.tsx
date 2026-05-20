@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100 selection:bg-orange-500 selection:text-black">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200">
+      <nav className="fixed top-0 w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="font-bold text-xl text-white">Portfolio</div>
@@ -53,9 +53,9 @@ function App() {
       {/* Hero Section */}
       <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gray-900 relative overflow-hidden border-b border-gray-800/50">
         <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[90%] h-[140%] bg-[radial-gradient(circle_at_right,_var(--tw-gradient-stops))] from-orange-500/85 via-gray-900/95 to-transparent opacity-90 pointer-events-none" />
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-12 w-full md:pl-12 relative z-10">
+        <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.35),_0_0_70px_rgba(249,115,22,0.25)] border-4 border-white/90 mx-auto md:mx-0 transition-shadow duration-500">
           <div className="flex-shrink-0">
-            <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.35),_0_0_70px_rgba(249,115,22,0.25)] border-4 border-white/90 mx-auto md:mx-0 transition-shadow duration-500">
+            <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_50px_rgba(249,115,22,0.35)] border-4 border-white/90 mx-auto md:mx-0">
               <img
                 src="/profilepic.jpeg"
                 alt="Chatarina Evangelista Sitorus"
