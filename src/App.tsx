@@ -45,12 +45,12 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            {/* <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
               <User className="w-16 h-16 text-white" />
-            </div> */}
+            </div>
             <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden shadow-lg border-4 border-white">
               <img
                 src="/profilepic.jpeg"
@@ -68,6 +68,46 @@ function App() {
               Passionate about transforming data into meaningful insights through analytics and machine learning
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={() => scrollToSection('about')}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              >
+                Learn About Me
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
+              >
+                Get In Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      
+      {/* Hero Section */}
+      <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div className="flex-shrink-0">
+            <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-white mx-auto md:mx-0">
+              <img
+                src="/profilepic.jpeg"
+                alt="Chatarina Evangelista Sitorus"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 mb-4">
+              Chatarina Evangelista
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                Sitorus
+              </span>
+            </h1>
+            <p className="text-xl sm:text-2xl text-slate-600 mb-8 max-w-lg">
+              Passionate about transforming data into meaningful insights through analytics and machine learning
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button
                 onClick={() => scrollToSection('about')}
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
