@@ -48,8 +48,15 @@ function App() {
       <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+            {/* <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
               <User className="w-16 h-16 text-white" />
+            </div> */}
+            <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden shadow-lg border-4 border-white">
+              <img
+                src="/profilepic.jpeg"
+                alt="Chatarina Evangelista Sitorus"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 mb-4">
               Chatarina Evangelista
