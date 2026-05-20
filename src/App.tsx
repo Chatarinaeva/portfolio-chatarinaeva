@@ -100,7 +100,7 @@ function App() {
         <div className="text-center md:text-left md:ml-12 flex-1">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
             Chatarina Evangelista
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-500 text-transparent bg-clip-text">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">
               Sitorus
             </span>
           </h1>
@@ -110,13 +110,13 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               onClick={() => scrollToSection('about')}
-              className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
               Learn About Me
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 hover:text-black transition-all duration-300"
+              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-500 hover:text-black transition-all duration-300"
             >
               Get In Touch
             </button>
