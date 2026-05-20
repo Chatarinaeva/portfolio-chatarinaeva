@@ -86,7 +86,7 @@ function App() {
       </section> */}
       
     {/* Hero Section */}
-    <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-br from-gray-900 to-gray-800">
+    <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gradient-to-br from-gray-900 to-orange-600">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-12 w-full md:pl-12">
         <div className="flex-shrink-0">
           <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl border-4 border-white mx-auto md:mx-0">
@@ -100,7 +100,7 @@ function App() {
         <div className="text-center md:text-left md:ml-12 flex-1">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
             Chatarina Evangelista
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
               Sitorus
             </span>
           </h1>
@@ -110,13 +110,13 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               onClick={() => scrollToSection('about')}
-              className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              className="bg-gradient-to-r from-orange-400 to-orange-600 text-black px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
               Learn About Me
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:text-black transition-all duration-300"
+              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 hover:text-black transition-all duration-300"
             >
               Get In Touch
             </button>
