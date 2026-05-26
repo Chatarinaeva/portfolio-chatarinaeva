@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Mail, Linkedin, GraduationCap, Database, BarChart3, Brain, Code, BookOpen, Cpu, Github } from 'lucide-react';
 
 const heroTaglines = [
-  'Final-Year Information Systems Student at Universitas Atma Jaya Yogyakarta',
-  'Machine Learning Engineer Cohort Graduate from Coding Camp 2025 powered by DBS Foundation',
+  'Final-Year Information Systems Student at UAJY',
+  'Machine Learning Graduate from Coding Camp 2025 powered by DBS Foundation',
   'Data & Tech Enthusiast',
 ];
 
@@ -117,7 +117,7 @@ function App() {
             </h1>
             
             <p className="text-base sm:text-lg text-gray-300 mt-4 mb-8 max-w-md md:max-w-lg leading-relaxed min-h-[84px]">
-              <span className="text-orange-400 font-semibold">{typedTagline}</span>
+              <span className="text-gray-300 font-semibold">{typedTagline}</span>
               <span className="inline-block w-[2px] h-5 bg-orange-400 ml-1 translate-y-1 animate-pulse"></span>
             </p>
       
