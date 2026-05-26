@@ -116,22 +116,22 @@ function App() {
               </span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-400 mt-4 mb-5 max-w-md md:max-w-lg leading-relaxed min-h-[36px]">
+            <p className="text-lg sm:text-xl text-gray-400 mt-4 mb-5 max-w-md md:max-w-lg mx-auto md:mx-0 leading-relaxed min-h-[64px] sm:min-h-[36px]">
               <span className="font-semibold">{typedTagline}</span>
               <span className="inline-block w-[2px] h-6 bg-orange-400 ml-1 translate-y-1 animate-pulse"></span>
             </p>
       
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
               <button
                 onClick={() => scrollToSection('about')}
-                className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-300"
+                className="w-fit bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-300"
               >
                 Learn About Me
               </button>
-      
+            
               <button
                 onClick={() => scrollToSection('contact')}
-                className="border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
+                className="w-fit border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
               >
                 Get In Touch
               </button>
