@@ -126,14 +126,14 @@ function App() {
                 onClick={() => scrollToSection('about')}
                 className="w-56 sm:w-auto bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-300"
               >
-                Learn About Me
+                Get to Know Me
               </button>
             
               <button
                 onClick={() => scrollToSection('contact')}
                 className="w-56 sm:w-auto border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
               >
-                Get In Touch
+                Let's Connect
               </button>
             </div>
           </div>
