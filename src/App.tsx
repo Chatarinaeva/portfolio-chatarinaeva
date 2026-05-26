@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { Mail, Linkedin, GraduationCap, Database, BarChart3, Brain, Code, BookOpen, Cpu, Github } from 'lucide-react';
 
 function App() {
-  const tagline =
+  const heroTagline =
     'Passionate about transforming data into meaningful insights through analytics and machine learning';
   
   const [typedTagline, setTypedTagline] = useState('');
   
   useEffect(() => {
-    if (typedTagline.length >= tagline.length) return;
+    if (typedTagline.length >= heroTagline.length) return;
   
     const timeout = setTimeout(() => {
-      setTypedTagline(tagline.slice(0, typedTagline.length + 1));
+      setTypedTagline(heroTagline.slice(0, typedTagline.length + 1));
     }, 35);
   
     return () => clearTimeout(timeout);
-  }, [typedTagline, tagline]);
+  }, [typedTagline, heroTagline]);
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -66,96 +66,47 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-[100svh] py-24 sm:py-28 flex items-center px-4 sm:px-6 lg:px-16 bg-gray-950 overflow-hidden border-b border-gray-800/50">
-        {/* Background Effects */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(249,115,22,0.12),_transparent_38%)] pointer-events-none" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] opacity-30 pointer-events-none" />
-        <div className="absolute top-20 right-10 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl animate-pulse pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-72 h-72 bg-orange-400/10 rounded-full blur-3xl pointer-events-none" />
-      
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center w-full relative z-10">
-          {/* Left Content */}
-          <div className="text-center lg:text-left order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 bg-gray-900/80 border border-orange-500/20 text-orange-300 px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-[0_0_25px_rgba(249,115,22,0.08)]">
-              <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
-              Final-Year Information Systems Student
+      <section className="h-auto min-h-screen pt-20 sm:pt-16 flex items-center px-4 sm:px-6 lg:px-16 bg-gray-900 relative overflow-hidden border-b border-gray-800/50">
+        <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[90%] h-[140%] bg-[radial-gradient(circle_at_right,_var(--tw-gradient-stops))] from-orange-500/85 via-gray-900/95 to-transparent opacity-90 pointer-events-none" />
+        
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-12 w-full md:pl-12 relative z-10">
+          <div className="flex-shrink-0">
+            <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_50px_rgba(249,115,22,0.35)] border-4 border-white/90 mx-auto md:mx-0">
+              <img
+                src="/profilepic.jpeg"
+                alt="Chatarina Evangelista Sitorus"
+                className="w-full h-full object-cover"
+              />
             </div>
+          </div>
       
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
-              Hi, I'm
-              <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-300 via-orange-400 to-orange-500">
-                Chatarina Evangelista
-              </span>
-              <span className="block text-white">
+          <div className="text-center md:text-left md:ml-12 flex-1">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+              Chatarina Evangelista
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500 mt-1">
                 Sitorus
               </span>
             </h1>
       
-            <p className="text-base sm:text-lg lg:text-xl text-gray-300 mt-6 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed min-h-[120px] sm:min-h-[96px] lg:min-h-[84px]">
+            <p className="text-lg sm:text-xl text-gray-300 mt-4 mb-8 max-w-md md:max-w-lg leading-relaxed min-h-[72px]">
               <span>{typedTagline}</span>
               <span className="inline-block w-[2px] h-6 bg-orange-400 ml-1 translate-y-1 animate-pulse"></span>
             </p>
       
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button
                 onClick={() => scrollToSection('about')}
-                className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_30px_rgba(249,115,22,0.45)] transform hover:-translate-y-0.5 transition-all duration-300"
+                className="bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-300"
               >
                 Learn About Me
               </button>
       
               <button
                 onClick={() => scrollToSection('contact')}
-                className="border border-gray-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
+                className="border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
               >
                 Get In Touch
               </button>
-            </div>
-      
-            <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 max-w-md mx-auto lg:mx-0">
-              <span className="bg-gray-900/80 border border-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm">
-                Python
-              </span>
-              <span className="bg-gray-900/80 border border-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm">
-                SQL
-              </span>
-              <span className="bg-gray-900/80 border border-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm">
-                Machine Learning
-              </span>
-              <span className="bg-gray-900/80 border border-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm">
-                Data Visualization
-              </span>
-            </div>
-          </div>
-      
-          {/* Right Profile Visual */}
-          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-orange-500/20 blur-3xl scale-110 animate-pulse"></div>
-      
-              <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full p-2 bg-gradient-to-br from-orange-400 via-orange-500 to-gray-900 shadow-[0_0_60px_rgba(249,115,22,0.3)]">
-                <div className="w-full h-full rounded-full overflow-hidden bg-gray-900 border-4 border-gray-950">
-                  <img
-                    src="/profilepic.jpeg"
-                    alt="Chatarina Evangelista Sitorus"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-      
-              <div className="hidden sm:block absolute -left-10 top-10 bg-gray-900/90 backdrop-blur-md border border-gray-800 rounded-2xl px-4 py-3 shadow-xl">
-                <p className="text-xs text-gray-500">Focus</p>
-                <p className="text-sm font-semibold text-white">Data Analytics</p>
-              </div>
-      
-              <div className="hidden sm:block absolute -right-8 bottom-16 bg-gray-900/90 backdrop-blur-md border border-gray-800 rounded-2xl px-4 py-3 shadow-xl">
-                <p className="text-xs text-gray-500">Interest</p>
-                <p className="text-sm font-semibold text-white">Machine Learning</p>
-              </div>
-      
-              <div className="hidden sm:block absolute left-1/2 -translate-x-1/2 -bottom-8 bg-orange-500 text-black rounded-2xl px-5 py-3 shadow-[0_0_30px_rgba(249,115,22,0.35)]">
-                <p className="text-sm font-bold whitespace-nowrap">Open to Collaboration</p>
-              </div>
             </div>
           </div>
         </div>
