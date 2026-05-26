@@ -364,50 +364,62 @@ function App() {
             {/* Email */}
             <a
               href="mailto:chatzarchive@gmail.com"
-              className="bg-gradient-to-br from-orange-500 to-orange-600 text-black p-8 rounded-2xl text-center hover:shadow-[0_0_30px_rgba(249,115,22,0.2)] transform hover:-translate-y-1.5 transition-all duration-300 group"
+              className="bg-gray-900 text-white p-8 rounded-2xl text-center border border-gray-800 hover:border-orange-500/40 hover:shadow-[0_0_30px_rgba(249,115,22,0.12)] transform hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden"
             >
-              <div className="bg-black/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Mail className="w-8 h-8 text-black" />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/[0.06] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          
+              <div className="relative z-10">
+                <div className="bg-orange-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-orange-500/20">
+                  <Mail className="w-8 h-8 text-orange-400" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Email</h3>
+                <p className="text-gray-400 mb-4 text-sm">Send me a message</p>
+                <span className="inline-block bg-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:bg-orange-400 transition-colors">
+                  Click to Email
+                </span>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-black">Email</h3>
-              <p className="text-orange-950/80 mb-4 text-sm">Send me a message</p>
-              <span className="inline-block bg-black text-white font-semibold px-5 py-2 rounded-full text-sm shadow-sm">
-                Click to Email
-              </span>
             </a>
-            
+          
             {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/chatarina-evangelista/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-900 text-white p-8 rounded-2xl text-center hover:border-gray-700 border border-gray-800 transform hover:-translate-y-1.5 transition-all duration-300 group"
+              className="bg-gray-900 text-white p-8 rounded-2xl text-center border border-gray-800 hover:border-orange-500/40 hover:shadow-[0_0_30px_rgba(249,115,22,0.12)] transform hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden"
             >
-              <div className="bg-orange-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-orange-500/20">
-                <Linkedin className="w-8 h-8 text-orange-400" />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/[0.06] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          
+              <div className="relative z-10">
+                <div className="bg-orange-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-orange-500/20">
+                  <Linkedin className="w-8 h-8 text-orange-400" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
+                <p className="text-gray-400 mb-4 text-sm">Connect professionally</p>
+                <span className="inline-block bg-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:bg-orange-400 transition-colors">
+                  View Profile
+                </span>
               </div>
-              <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
-              <p className="text-gray-400 mb-4 text-sm">Connect professionally</p>
-              <span className="inline-block bg-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:bg-orange-400 transition-colors">
-                View Profile
-              </span>
             </a>
-
+          
             {/* GitHub */}
             <a
               href="https://github.com/Chatarinaeva"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-900 text-white p-8 rounded-2xl text-center hover:border-gray-700 border border-gray-800 transform hover:-translate-y-1.5 transition-all duration-300 group"
+              className="bg-gray-900 text-white p-8 rounded-2xl text-center border border-gray-800 hover:border-orange-500/40 hover:shadow-[0_0_30px_rgba(249,115,22,0.12)] transform hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden"
             >
-              <div className="bg-white/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-gray-800">
-                <Github className="w-8 h-8 text-gray-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/[0.06] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          
+              <div className="relative z-10">
+                <div className="bg-orange-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-orange-500/20">
+                  <Github className="w-8 h-8 text-orange-400" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">GitHub</h3>
+                <p className="text-gray-400 mb-4 text-sm">Explore my projects</p>
+                <span className="inline-block bg-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:bg-orange-400 transition-colors">
+                  View Repository
+                </span>
               </div>
-              <h3 className="text-xl font-bold mb-2">GitHub</h3>
-              <p className="text-gray-400 mb-4 text-sm">Explore my projects</p>
-              <span className="inline-block bg-gray-800 text-gray-200 font-medium px-5 py-2 rounded-full text-sm shadow-sm hover:bg-gray-700 transition-colors">
-                View Repository
-              </span>
             </a>
           </div>
         </div>
