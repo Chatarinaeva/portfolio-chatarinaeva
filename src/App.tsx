@@ -105,7 +105,7 @@ function App() {
             </div>
           </div>
       
-          <div className="text-center md:text-left md:ml-12 flex-1">
+          <div className="text-center md:text-left md:ml-12 flex-1 mt-4 md:mt-0">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
               <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-gray-300 mb-2">
                 Hi, I'm
