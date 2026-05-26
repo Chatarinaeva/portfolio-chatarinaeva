@@ -1,21 +1,46 @@
 import React, { useEffect, useState } from 'react';
 import { Mail, Linkedin, GraduationCap, Database, BarChart3, Brain, Code, BookOpen, Cpu, Github } from 'lucide-react';
 
+const heroTaglines = [
+  'Final-Year Information Systems Student at Universitas Atma Jaya Yogyakarta',
+  'Machine Learning Engineer Cohort Graduate from Coding Camp 2025 powered by DBS Foundation',
+  'Data & Tech Enthusiast',
+];
+
 function App() {
-  const heroTagline =
-    'Passionate about transforming data into meaningful insights through analytics and machine learning';
-  
   const [typedTagline, setTypedTagline] = useState('');
-  
+  const [taglineIndex, setTaglineIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
   useEffect(() => {
-    if (typedTagline.length >= heroTagline.length) return;
-  
+    const currentTagline = heroTaglines[taglineIndex];
+    const typingSpeed = isDeleting ? 30 : 55;
+    const pauseTime = 1400;
+
+    if (!isDeleting && typedTagline === currentTagline) {
+      const timeout = setTimeout(() => {
+        setIsDeleting(true);
+      }, pauseTime);
+
+      return () => clearTimeout(timeout);
+    }
+
+    if (isDeleting && typedTagline === '') {
+      setIsDeleting(false);
+      setTaglineIndex((prevIndex) => (prevIndex + 1) % heroTaglines.length);
+      return;
+    }
+
     const timeout = setTimeout(() => {
-      setTypedTagline(heroTagline.slice(0, typedTagline.length + 1));
-    }, 35);
-  
+      setTypedTagline((prevText) =>
+        isDeleting
+          ? currentTagline.substring(0, prevText.length - 1)
+          : currentTagline.substring(0, prevText.length + 1)
+      );
+    }, typingSpeed);
+
     return () => clearTimeout(timeout);
-  }, [typedTagline, heroTagline]);
+  }, [typedTagline, taglineIndex, isDeleting]);
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -82,15 +107,18 @@ function App() {
       
           <div className="text-center md:text-left md:ml-12 flex-1">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+              <span className="block text-xl sm:text-2xl lg:text-3xl font-medium text-gray-300 mb-2">
+                Hi, I'm
+              </span>
               Chatarina Evangelista
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500 mt-1">
                 Sitorus
               </span>
             </h1>
-      
-            <p className="text-lg sm:text-xl text-gray-300 mt-4 mb-8 max-w-md md:max-w-lg leading-relaxed min-h-[72px]">
-              <span>{typedTagline}</span>
-              <span className="inline-block w-[2px] h-6 bg-orange-400 ml-1 translate-y-1 animate-pulse"></span>
+            
+            <p className="text-base sm:text-lg text-gray-300 mt-4 mb-8 max-w-md md:max-w-lg leading-relaxed min-h-[84px]">
+              <span className="text-orange-400 font-semibold">{typedTagline}</span>
+              <span className="inline-block w-[2px] h-5 bg-orange-400 ml-1 translate-y-1 animate-pulse"></span>
             </p>
       
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
