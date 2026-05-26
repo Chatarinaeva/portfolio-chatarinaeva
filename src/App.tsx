@@ -107,7 +107,7 @@ function App() {
       
           <div className="text-center md:text-left md:ml-12 flex-1 mt-4 md:mt-0">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-              <span className="block font-serif italic text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-200 mb-2">
+              <span className="block font-['Playfair_Display'] italic text-2xl sm:text-3xl lg:text-4xl text-gray-200 mb-2">
                 Hi, I'm
               </span>
               Chatarina Evangelista
