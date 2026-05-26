@@ -116,7 +116,7 @@ function App() {
               </span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-400 mt-6 mb-5 max-w-md md:max-w-lg leading-relaxed min-h-[36px]">
+            <p className="text-lg sm:text-xl text-gray-400 mt-4 mb-5 max-w-md md:max-w-lg leading-relaxed min-h-[36px]">
               <span className="font-semibold">{typedTagline}</span>
               <span className="inline-block w-[2px] h-6 bg-orange-400 ml-1 translate-y-1 animate-pulse"></span>
             </p>
