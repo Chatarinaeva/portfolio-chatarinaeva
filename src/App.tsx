@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Mail, Linkedin, GraduationCap, Database, BarChart3, Brain, Code, BookOpen, Cpu, Github, Menu, X } from 'lucide-react';
 
 const heroTaglines = [
-  'Information Systems Student at UAJY',
+  'Information Systems Student',
   'Machine Learning Graduate from Coding Camp 2025',
   'Data & Tech Enthusiast',
 ];
