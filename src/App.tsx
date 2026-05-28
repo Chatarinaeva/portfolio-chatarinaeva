@@ -92,15 +92,15 @@ function App() {
             <div className="font-bold text-xl text-white">Portfolio</div>
       
             {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-3">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`font-medium transition-colors duration-200 ${
+                  className={`px-5 py-3 rounded-2xl font-medium text-base transition-all duration-200 ${
                     activeSection === item.id
-                      ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.35)]'
-                      : 'text-gray-400 hover:text-orange-400 hover:bg-gray-800/70'
+                      ? 'bg-orange-500/90 text-black shadow-[0_0_20px_rgba(249,115,22,0.25)]'
+                      : 'text-gray-400 hover:text-orange-400 hover:bg-gray-800/80'
                   }`}
                 >
                   {item.label}
