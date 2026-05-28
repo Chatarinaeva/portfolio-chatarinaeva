@@ -20,7 +20,7 @@ function App() {
   const [taglineIndex, setTaglineIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const currentTagline = heroTaglines[taglineIndex];
@@ -56,7 +56,7 @@ function App() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 120;
 
-      let currentSection = 'about';
+      let currentSection = '';
 
       navItems.forEach((item) => {
         const section = document.getElementById(item.id);
@@ -99,8 +99,8 @@ function App() {
                   onClick={() => scrollToSection(item.id)}
                   className={`font-medium transition-colors duration-200 ${
                     activeSection === item.id
-                      ? 'text-orange-400'
-                      : 'text-gray-400 hover:text-orange-400'
+                      ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.35)]'
+                      : 'text-gray-400 hover:text-orange-400 hover:bg-gray-800/70'
                   }`}
                 >
                   {item.label}
@@ -128,8 +128,8 @@ function App() {
                     onClick={() => scrollToSection(item.id)}
                     className={`text-center text-lg font-medium transition-colors duration-200 ${
                       activeSection === item.id
-                        ? 'text-orange-400'
-                        : 'text-gray-400 hover:text-orange-400 active:text-orange-400 focus:text-orange-400'
+                        ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.35)]'
+                        : 'text-gray-400 hover:text-orange-400 hover:bg-gray-800/70 active:bg-gray-800'
                     }`}
                   >
                     {item.label}
