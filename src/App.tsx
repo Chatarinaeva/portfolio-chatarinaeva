@@ -121,15 +121,15 @@ function App() {
           {/* Mobile Navigation Menu */}
           {isMenuOpen && (
             <div className="md:hidden pb-6 pt-4 border-t border-gray-800">
-              <div className="flex flex-col items-center space-y-5">
+              <div className="flex flex-col items-center space-y-4">
                 {navItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`text-center text-lg font-medium transition-colors duration-200 ${
+                    className={`w-36 py-2 rounded-full text-center text-base font-medium transition-all duration-200 ${
                       activeSection === item.id
-                        ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.35)]'
-                        : 'text-gray-400 hover:text-orange-400 hover:bg-gray-800/70 active:bg-gray-800'
+                        ? 'bg-orange-500 text-black shadow-[inset_0_1.5px_5px_rgba(0,0,0,0.28)] translate-y-[1px]'
+                        : 'text-gray-400 hover:text-white hover:bg-gray-800/70 active:bg-gray-800/80'
                     }`}
                   >
                     {item.label}
