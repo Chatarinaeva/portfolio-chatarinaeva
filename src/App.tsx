@@ -182,7 +182,7 @@ function App() {
             
               <button
                 onClick={() => scrollToSection('contact')}
-                className="w-56 sm:w-auto border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
+                className="hidden sm:inline-flex w-56 sm:w-auto items-center justify-center border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
               >
                 Let's Connect
               </button>
