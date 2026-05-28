@@ -7,11 +7,20 @@ const heroTaglines = [
   'Data & Tech Enthusiast',
 ];
 
+const navItems = [
+  { id: 'about', label: 'About' },
+  { id: 'education', label: 'Education' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'contact', label: 'Contact' },
+];
+
 function App() {
   const [typedTagline, setTypedTagline] = useState('');
   const [taglineIndex, setTaglineIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [isMenuOpen, setIsMenuOpen ] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     const currentTagline = heroTaglines[taglineIndex];
@@ -42,10 +51,35 @@ function App() {
 
     return () => clearTimeout(timeout);
   }, [typedTagline, taglineIndex, isDeleting]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 120;
+
+      let currentSection = 'about';
+
+      navItems.forEach((item) => {
+        const section = document.getElementById(item.id);
+
+        if (section && scrollPosition >= section.offsetTop) {
+          currentSection = item.id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () =>  window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
+
+    setActiveSection(sectionId);
     setIsMenuOpen(false);
   };
 
@@ -59,36 +93,19 @@ function App() {
       
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-              >
-                About
-              </button>
-              <button
-                onClick={() => scrollToSection('education')}
-                className="text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-              >
-                Education
-              </button>
-              <button
-                onClick={() => scrollToSection('experience')}
-                className="text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-              >
-                Experience
-              </button>
-              <button
-                onClick={() => scrollToSection('projects')}
-                className="text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-              >
-                Projects
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-              >
-                Contact
-              </button>
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`font-medium transition-colors duration-200 ${
+                    activeSection === item.id
+                      ? 'text-orange-400'
+                      : 'text-gray-400 hover:text-orange-400'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
             </div>
       
             {/* Mobile Hamburger Button */}
@@ -105,19 +122,17 @@ function App() {
           {isMenuOpen && (
             <div className="md:hidden pb-6 pt-4 border-t border-gray-800">
               <div className="flex flex-col items-center space-y-5">
-                {[
-                  ['about', 'About'],
-                  ['education', 'Education'],
-                  ['experience', 'Experience'],
-                  ['projects', 'Projects'],
-                  ['contact', 'Contact'],
-                ].map(([id, label]) => (
+                {navItems.map((item) => (
                   <button
-                    key={id}
-                    onClick={() => scrollToSection(id)}
-                    className="text-center text-lg text-gray-300 hover:text-orange-400 font-medium transition-colors duration-200"
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`text-center text-lg font-medium transition-colors duration-200 ${
+                      activeSection === item.id
+                        ? 'text-orange-400'
+                        : 'text-gray-400 hover:text-orange-400 active:text-orange-400 focus:text-orange-400'
+                    }`}
                   >
-                    {label}
+                    {item.label}
                   </button>
                 ))}
               </div>
