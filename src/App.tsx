@@ -97,10 +97,10 @@ function App() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-5 py-3 rounded-2xl font-medium text-base transition-all duration-200 ${
+                  className={`px-6 py-3 rounded-full font-medium text-base transition-all duration-200 ${
                     activeSection === item.id
-                      ? 'bg-orange-500/90 text-black shadow-[0_0_20px_rgba(249,115,22,0.25)]'
-                      : 'text-gray-400 hover:text-orange-400 hover:bg-gray-800/80'
+                      ? 'bg-orange-400 text-black shadow-[0_0_20px_rgba(251,146,60,0.22)]'
+                      : 'text-gray-400 hover:text-white hover:bg-gray-800/70'
                   }`}
                 >
                   {item.label}
