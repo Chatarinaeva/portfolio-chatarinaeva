@@ -287,11 +287,12 @@ function App() {
                   <h3 className="text-2xl font-bold text-white mb-2">Undergraduate Student in Information Systems</h3>
                   <p className="text-lg text-orange-400 font-semibold mb-2">Universitas Atma Jaya Yogyakarta</p>
                   <p className="text-sm text-gray-500 mb-3 font-medium">Aug 2022 – Present</p>
-                  <p className="text-gray-400 mb-4 leading-relaxed">Building a solid foundation in information systems, database management, and business analytics, with practical applications in digital enterprises.</p>
+                  <p className="text-gray-400 mb-4 leading-relaxed">Developing skills in data, database systems, business analytics, and system analysis, with an interest in applying machine learning to support data-driven decision-making.</p>
                   <div className="flex flex-wrap gap-2">
+                    <span className="bg-gray-900 text-gray-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-800">Data Analytics</span>
                     <span className="bg-gray-900 text-gray-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-800">Database Systems</span>
                     <span className="bg-gray-900 text-gray-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-800">Business Analytics</span>
-                    <span className="bg-gray-900 text-gray-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-800">System Analysis</span>
+                    <span className="bg-gray-900 text-gray-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-800">Machine Learning</span>
                   </div>
                 </div>
               </div>
@@ -307,7 +308,9 @@ function App() {
                   <h3 className="text-2xl font-bold text-white mb-2">Senior High School – Mathematics and Natural Sciences</h3>
                   <p className="text-lg text-orange-400 font-semibold mb-2">SMA Negeri 9 Kota Tangerang</p>
                   <p className="text-sm text-gray-500 mb-3 font-medium">2019 – 2022</p>
-                  <p className="text-gray-400 leading-relaxed">Graduated with a focus in Mathematics and Natural Sciences (MIPA), fostering a strong analytical and logical foundation.</p>
+                  <p className="text-gray-400 leading-relaxed">
+                    Graduated with a focus in Mathematics and Natural Sciences, building a strong foundation in mathematics, analytical reasoning, and structured problem-solving.
+                  </p>
                 </div>
               </div>
             </div>
@@ -529,10 +532,10 @@ function App() {
       <footer className="bg-gray-950 text-gray-400 py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-950">
         <div className="max-w-6xl mx-auto text-center space-y-2">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Chatarina Evangelista Sitorus. Built with passion for data and analytics.
+            © {new Date().getFullYear()} Chatarina Evangelista Sitorus.
           </p>
           <p className="text-xs text-gray-600">
-            Information Systems Student • Machine Learning & Business Intelligence solutions
+            Information Systems Student
           </p>
         </div>
       </footer>
