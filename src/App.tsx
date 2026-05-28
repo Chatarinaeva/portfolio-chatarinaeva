@@ -192,7 +192,7 @@ function App() {
             
               {/* Social Icons */}
               <div className="flex items-center justify-center md:justify-start w-56 sm:w-full">
-                <div className="w-full flex items-center justify-between bg-gray-950/60 border border-gray-800/80 px-6 py-2.5 rounded-full shadow-lg">
+                <div className="w-full flex items-center justify-between px-6 py-1">
                   <a
                     href="https://github.com/Chatarinaeva"
                     target="_blank"
