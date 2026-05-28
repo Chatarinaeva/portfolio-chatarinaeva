@@ -474,7 +474,7 @@ function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <p className="text-gray-400 mb-4 text-sm">Send me a message</p>
-                <span className="inline-block bg-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:bg-orange-400 transition-colors">
+                <span className="inline-block bg-gradient-to-r from-orange-400 to-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:from-orange-300 hover:to-orange-400 transition-all duration-300">
                   Click to Email
                 </span>
               </div>
@@ -495,7 +495,7 @@ function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
                 <p className="text-gray-400 mb-4 text-sm">Connect professionally</p>
-                <span className="inline-block bg-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:bg-orange-400 transition-colors">
+                <span className="inline-block bg-gradient-to-r from-orange-400 to-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:from-orange-300 hover:to-orange-400 transition-all duration-300">
                   View Profile
                 </span>
               </div>
@@ -516,7 +516,7 @@ function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">GitHub</h3>
                 <p className="text-gray-400 mb-4 text-sm">Explore my projects</p>
-                <span className="inline-block bg-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:bg-orange-400 transition-colors">
+                <span className="inline-block bg-gradient-to-r from-orange-400 to-orange-500 text-black font-semibold px-5 py-2 rounded-full text-sm shadow-sm hover:from-orange-300 hover:to-orange-400 transition-all duration-300">
                   View Repository
                 </span>
               </div>
