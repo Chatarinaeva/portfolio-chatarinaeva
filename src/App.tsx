@@ -172,51 +172,55 @@ function App() {
               <span className="inline-block w-[2px] h-6 bg-orange-400 ml-1 translate-y-1 animate-pulse"></span>
             </p>
       
-            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-              <button
-                onClick={() => scrollToSection('about')}
-                className="w-56 sm:w-auto bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-300"
-              >
-                Get to Know Me
-              </button>
-            
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="hidden sm:inline-flex w-56 sm:w-auto items-center justify-center border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
-              >
-                Let's Connect
-              </button>
-            </div>
-            {/* Social Icons */}
-            <div className="flex items-center justify-center md:justify-start mt-3">
-              <div className="w-56 flex items-center justify-between bg-gray-950/80 border border-gray-800 px-5 py-2.5 rounded-full shadow-lg">
-                <a
-                  href="https://github.com/Chatarinaeva"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
+            <div className="flex flex-col items-center md:items-start gap-3 w-full sm:w-fit">
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="w-56 sm:w-auto bg-gradient-to-r from-orange-400 to-orange-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <Github className="w-5 h-5" />
-                </a>
-            
-                <a
-                  href="https://www.linkedin.com/in/chatarina-evangelista/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
+                  Get to Know Me
+                </button>
+              
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="hidden sm:inline-flex w-56 sm:w-auto items-center justify-center border-2 border-white/80 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-500 hover:border-orange-500 hover:text-black transition-all duration-300"
                 >
-                  <Linkedin className="w-5 h-5" />
-                </a>
+                  Let's Connect
+                </button>
+              </div>
             
-                <a
-                  href="mailto:chatzarchive@gmail.com"
-                  aria-label="Email"
-                  className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
-                >
-                  <Mail className="w-5 h-5" />
-                </a>
+              {/* Social Icons */}
+              <div className="flex items-center justify-center md:justify-start w-56 sm:w-full">
+                <div className="w-full flex items-center justify-between bg-gray-950/80 border border-gray-800 px-6 py-2.5 rounded-full shadow-lg">
+                  <a
+                    href="https://github.com/Chatarinaeva"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
+                  >
+                    <Github className="w-5 h-5" />
+                  </a>
+              
+                  <a
+                    href="https://www.linkedin.com/in/chatarina-evangelista/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+              
+                  <a
+                    href="mailto:chatzarchive@gmail.com"
+                    aria-label="Email"
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
+                  >
+                    <Mail className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
