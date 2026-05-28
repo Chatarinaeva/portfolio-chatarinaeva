@@ -188,14 +188,14 @@ function App() {
               </button>
             </div>
             {/* Social Icons */}
-            <div className="flex items-center justify-center md:justify-start mt-6">
-              <div className="flex items-center gap-4 bg-gray-950/80 border border-gray-800 px-4 py-2 rounded-full shadow-lg">
+            <div className="flex items-center justify-center md:justify-start mt-4">
+              <div className="w-56 flex items-center justify-between bg-gray-950/80 border border-gray-800 px-5 py-2.5 rounded-full shadow-lg">
                 <a
                   href="https://github.com/Chatarinaeva"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-all duration-200"
+                  className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
                 >
                   <Github className="w-5 h-5" />
                 </a>
@@ -205,7 +205,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-all duration-200"
+                  className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
@@ -213,7 +213,7 @@ function App() {
                 <a
                   href="mailto:chatzarchive@gmail.com"
                   aria-label="Email"
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-all duration-200"
+                  className="w-9 h-9 rounded-full flex items-center justify-center text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 hover:shadow-[0_0_18px_rgba(249,115,22,0.3)] transform hover:-translate-y-0.5 transition-all duration-300"
                 >
                   <Mail className="w-5 h-5" />
                 </a>
