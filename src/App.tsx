@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Mail, Linkedin, GraduationCap, Database, BarChart3, Brain, Code, BookOpen, Cpu, Github } from 'lucide-react';
+import { Mail, Linkedin, GraduationCap, Database, BarChart3, Brain, Code, BookOpen, Cpu, Github, Menu, X } from 'lucide-react';
 
 const heroTaglines = [
   'Information Systems Student at UAJY',
@@ -11,6 +11,7 @@ function App() {
   const [typedTagline, setTypedTagline] = useState('');
   const [taglineIndex, setTaglineIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isMenuOpen, setIsMenuOpen ] = useState(false);
 
   useEffect(() => {
     const currentTagline = heroTaglines[taglineIndex];
@@ -45,6 +46,7 @@ function App() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
   };
 
   return (
@@ -54,6 +56,8 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="font-bold text-xl text-white">Portfolio</div>
+      
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button
                 onClick={() => scrollToSection('about')}
@@ -86,7 +90,54 @@ function App() {
                 Contact
               </button>
             </div>
+      
+            {/* Mobile Hamburger Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-gray-300 hover:text-orange-400 transition-colors duration-200"
+              aria-label="Toggle navigation menu"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
+      
+          {/* Mobile Navigation Menu */}
+          {isMenuOpen && (
+            <div className="md:hidden pb-4 pt-2 border-t border-gray-800">
+              <div className="flex flex-col space-y-3">
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => scrollToSection('education')}
+                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
+                >
+                  Education
+                </button>
+                <button
+                  onClick={() => scrollToSection('experience')}
+                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
+                >
+                  Experience
+                </button>
+                <button
+                  onClick={() => scrollToSection('projects')}
+                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
+                >
+                  Projects
+                </button>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
