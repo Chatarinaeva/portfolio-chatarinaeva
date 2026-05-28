@@ -142,7 +142,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="h-auto min-h-screen pt-24 pb-10 sm:pt-16 flex items-start md:items-center px-4 sm:px-6 lg:px-16 bg-gray-900 relative overflow-hidden border-b border-gray-800/50">
+      <section className="h-auto min-h-[100svh] pt-24 pb-14 sm:pt-16 sm:pb-10 flex items-center px-4 sm:px-6 lg:px-16 bg-gray-900 relative overflow-hidden border-b border-gray-800/50">
         <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[90%] h-[140%] bg-[radial-gradient(circle_at_right,_var(--tw-gradient-stops))] from-orange-500/85 via-gray-900/95 to-transparent opacity-90 pointer-events-none" />
         
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-7 md:gap-12 w-full md:pl-12 relative z-10">
