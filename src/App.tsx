@@ -187,6 +187,38 @@ function App() {
                 Let's Connect
               </button>
             </div>
+            {/* Social Icons */}
+            <div className="flex items-center justify-center md:justify-start mt-6">
+              <div className="flex items-center gap-4 bg-gray-950/80 border border-gray-800 px-4 py-2 rounded-full shadow-lg">
+                <a
+                  href="https://github.com/Chatarinaeva"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-all duration-200"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+            
+                <a
+                  href="https://www.linkedin.com/in/chatarina-evangelista/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-all duration-200"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+            
+                <a
+                  href="mailto:chatzarchive@gmail.com"
+                  aria-label="Email"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-all duration-200"
+                >
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -284,7 +316,7 @@ function App() {
                   <GraduationCap className="w-8 h-8 text-orange-400" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-white mb-2">Undergraduate Student in Information Systems</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">Undergraduate Student – Information Systems</h3>
                   <p className="text-lg text-orange-400 font-semibold mb-2">Universitas Atma Jaya Yogyakarta</p>
                   <p className="text-sm text-gray-500 mb-3 font-medium">Aug 2022 – Present</p>
                   <p className="text-gray-400 mb-4 leading-relaxed">Developing skills in data, database systems, business analytics, and system analysis, with an interest in applying machine learning to support data-driven decision-making.</p>
