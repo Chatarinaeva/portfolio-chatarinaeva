@@ -103,38 +103,23 @@ function App() {
       
           {/* Mobile Navigation Menu */}
           {isMenuOpen && (
-            <div className="md:hidden pb-4 pt-2 border-t border-gray-800">
-              <div className="flex flex-col space-y-3">
-                <button
-                  onClick={() => scrollToSection('about')}
-                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-                >
-                  About
-                </button>
-                <button
-                  onClick={() => scrollToSection('education')}
-                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-                >
-                  Education
-                </button>
-                <button
-                  onClick={() => scrollToSection('experience')}
-                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-                >
-                  Experience
-                </button>
-                <button
-                  onClick={() => scrollToSection('projects')}
-                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-                >
-                  Projects
-                </button>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="text-left text-gray-400 hover:text-orange-400 font-medium transition-colors duration-200"
-                >
-                  Contact
-                </button>
+            <div className="md:hidden pb-6 pt-4 border-t border-gray-800">
+              <div className="flex flex-col items-center space-y-5">
+                {[
+                  ['about', 'About'],
+                  ['education', 'Education'],
+                  ['experience', 'Experience'],
+                  ['projects', 'Projects'],
+                  ['contact', 'Contact'],
+                ].map(([id, label]) => (
+                  <button
+                    key={id}
+                    onClick={() => scrollToSection(id)}
+                    className="text-center text-lg text-gray-300 hover:text-orange-400 font-medium transition-colors duration-200"
+                  >
+                    {label}
+                  </button>
+                ))}
               </div>
             </div>
           )}
